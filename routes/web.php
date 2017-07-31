@@ -80,3 +80,24 @@ Route::get('/about', function(){
 Route::get('cektampilan', function (){
 	return view('layouts.master');
 });
+
+// Route::get('/orangtua', function(){
+// 	$ortu = App\orangtua::all();
+// 	foreach ($ortu as $key ){
+//             echo $key->nama_ayah;
+//             echo " dengan ";
+//             echo $key->nama_ibu;
+//             echo " mempunyai anak ";
+//             foreach ($key->siswa as $data ) {
+//             echo "<li>".$data->nama."</li>";
+//             echo "<hr>";
+//             }
+
+// 		}
+// });
+
+Route::get('/coba', 'etaterangkanlah@index');
+Route::get('/coba2', 'etaterangkanlah@tampilanmodel');
+Route::get('/coba3', 'etaterangkanlah@tampilanmodel2');
+Route::get('/coba4', 'etaterangkanlah@percobaan');
+Route::resource('orangtua','orangtuaController');
