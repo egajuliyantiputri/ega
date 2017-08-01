@@ -101,3 +101,4 @@ Route::get('/coba2', 'etaterangkanlah@tampilanmodel');
 Route::get('/coba3', 'etaterangkanlah@tampilanmodel2');
 Route::get('/coba4', 'etaterangkanlah@percobaan');
 Route::resource('orangtua','orangtuaController');
+Route::resource('/siswa','siswaController');

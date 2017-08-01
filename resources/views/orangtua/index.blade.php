@@ -29,7 +29,7 @@
 		<td>{{$data->alamat}}</td>
 		<td>
 		@foreach($data->siswa as $a)
-		<li>{{$a->nama}}</li>
+		<li>{{$a->nama}}</li>	
 		@endforeach
 		</td>
 		<td>
